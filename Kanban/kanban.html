@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../pages-style.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="text-container">
+            <h1>Kanban</h1>
+            <h2 class="text-subtitle">Introdução</h2>
+
+            <div class="p-container">
+                <p>O Kanban foi desenvolvido na Toyota, onde foi aplicado em um sistema de produção just-in-time através
+                    de
+                    várias práticas de engenharia industrial. A abordagem representa um sistema puxado, ou seja, a
+                    produção
+                    é baseada na demanda do cliente.
+                </p>
+                <p>Assim, foi criado a base de produção Lean em razão a esse sistema de produção.O Lean tem como
+                    propósito
+                    minimizar as atividades mas não perder a produtividade.</p>
+            </div>
+
+            <img src="kanban1.png" class="img-fluid">
+            <div class="p-container">
+                <p>
+                    David Anderson em 2007, junto outras figuras da comunidade Agile e Lean, adaptaram o Kanban em uma
+                    metodologia baseada em métodos de melhoria do processo e do fluxo de trabalho, enfoca a gestão de
+                    alterações, onde é definido a forma de implantação novas funcionalidades no software e a entrega de
+                    serviços
+                    que é baseada nas necessidades e expectativas do cliente assim gerando valor melhorando a eficiência
+                    e
+                    produtividade de uma organização
+                </p>
+            </div>
+
+            <h2 class="text-subtitle">Princípios do Kanban</h2>
+            <div class="p-container">
+                <p>O Kanban tem abordagem ao processo incremental e evolutivo e à mudança de sistemas para organizações
+                    do
+                    trabalho de conhecimento. Essa abordagem formulada por David tem como enfoque em fazer coisas e seus
+                    fundamentos são divididos em dois tipos de princípios e seis práticas.</p>
+            </div>
+
+            <h3 class="text-subtitle">Princípios de Gerenciamento de Mudanças</h3>
+
+            <ol>
+                <li>
+                    <b>Comece com o que você faz agora</b><br>O Kanban oferece a flexibilidade de ser usado nos fluxos
+                    de
+                    trabalho, sistemas e processos existentes e reconhece que esses processos, responsabilidades,
+                    títulos
+                    tradicionais existentes, tem seu valor para a instituição e em certos casos vale a pena preservar.
+                    Sendo
+                    assim, naturalmente o método irá levantar o que precisa ser melhorado dentro dos processos de
+                    trabalho e
+                    ajudará a encontrar e avaliar mudanças.
+                </li>
+                <li>
+                    <b>Concordar em buscar mudanças incrementais e evolutivas</b><br>O método Kanban busca minimizar
+                    resistências ao promover pequenas e contínuas melhorias no processo atual, usando colaboração e
+                    feedback. Evita mudanças radicais, que costumam encontrar resistência devido ao medo ou incerteza.
+                </li>
+                <li>
+                    <b>Incentivo de atos de liderança em todos os níveis</b><br>A liderança atua para melhorar sua forma
+                    de
+                    trabalhar através de percepções diárias das pessoas, onde cada observação compartilhada promove uma
+                    mentalidade de melhoria contínua, para atingir o desempenho ideal das equipes.
+                </li>
+            </ol>
+
+            <h3 class="text-subtitle">Princípios da entrega de serviços</h3>
+
+            <ol>
+                <li>
+                    <b>Foco nas necessidades e expectativas do cliente</b><br>Ter como objetivo central a entrega de
+                    valor
+                    para o cliente, compreendendo as expectativas e necessidades particulares de cada cliente.
+                </li>
+                <li>
+                    <b>Gerenciar o trabalho</b><br>Deixar com que as pessoas desenvolvam a habilidade de se auto
+                    organizar,
+                    garante melhores resultados sem o “ruído” do micro gerenciamento de pessoas.
+                </li>
+                <li>
+                    <b>Rever regularmente a rede de serviços</b><br>Após criar uma abordagem orientada a serviços, é
+                    necessário avaliar de tempos em tempos se algo está funcionando e o que pode ser feito para melhorar
+                    os
+                    resultados entregues.
+                </li>
+            </ol>
+
+            <h2 class="text-subtitle">Práticas do Kanban</h2>
+            <div class="p-container">
+                <p>O Kanban em si depende seis práticas fundamentais.</p>
+            </div>
+
+            <ol>
+                <li>
+                    <b>Visualização de fluxo de trabalho com o quadro Kanban</b><br>O quadro Kanban representa o fluxo
+                    de
+                    trabalho sendo dividido em 3 colunas: “por fazer”, “fazendo”e “feito”. Essas colunas representam o
+                    estágio que cada funcionalidade do software está.
+                    Essas funcionalidades ficam em cartões que podem ter histórias de usuário isoladas ou defeitos
+                    recém-descobertos que são deslocados pelas colunas ao decorrer do progresso do software.
+                </li>
+                <li>
+                    <b>Limitação de quantidade de work in progress (Estoque em processo) em um dado momento</b><br>Mudar
+                    o
+                    foco de uma equipe no meio de um fluxo, geralmente prejudica o processo de desenvolvimento e
+                    certamente
+                    irá gerar desperdício e ineficiência.
+                    Então se deriva do sistema de produção da Toyota, o sistema puxado, que limita o work in progress
+                    nas
+                    fases do fluxo ou no fluxo de trabalho, e definindo um limite de itens por estágio, assim só irá ser
+                    “puxado” um novo cartão para a coluna quando houver capacidade disponível.
+                    Os desenvolvedores são instruídos a completar sua tarefa atual antes de iniciar outra, assim
+                    melhorando
+                    o tempo de ciclo, a frequência de entrega de funcionalidades do software e a qualidade de trabalho.
+                </li>
+                <li>
+                    <b>Gerenciamento de fluxo</b><br>Gerenciar o fluxo é gerenciar o trabalho, analisando pontos em que
+                    o
+                    fluxo sofre interrupções e definir mudanças que são subsequentemente implementadas com o objetivo de
+                    reduzir desperdícios e portanto, entender como gerar valor de forma mais eficiente.
+                <li>
+                    <b>Explicitar as políticas de processo</b><br>Explicitar as políticas de processo é explicar de
+                    forma
+                    clara os motivos pelo qual um item foi selecionado e quais os critérios para defini-lo como "feito"
+                    Quando todos estiverem com a definição clara do item poderão trabalhar e tomar decisões em relação
+                    ao
+                    impacto positivo.
+                    As políticas de trabalho impulsionam a auto-organização das pessoa.
+
+                </li>
+                <li>
+                    <b>Enfocar a melhoria contínua com a criação de ciclos de feedback</b><br>Nos ciclos de feedback são
+                    introduzidas alterações com base em dados de processo e é medido o efeito das alterações de processo
+                    anteriores.
+                    Um exemplo de loop de feedback a nível de equipe, são as reuniões Kaban diárias para acompanhar o
+                    fluxo
+                    de trabalho.
+
+                </li>
+                <li>
+                    <b>Melhorar a colaboratividade do time</b><br>Tomar decisões de alteração de processos
+                    colaborativamente
+                    com base em métodos, feedbacks e métricas, engajando todos os membros da equipe se necessário.
+                </li>
+            </ol>
+            <br>
+            <img src="Kanban2.jpg" class="img-fluid">
+
+            <h2 class="text-subtitle">Reuniões de equipe do Kanban</h2>
+            <div class="p-container">
+                <p>As reuniões do kanban são semelhantes a da metodologia Scrum. Caso o Kanban seja introduzido no meio
+                    de
+                    um
+                    projeto já existente, nem todos os itens começam na coluna de backlog. Contudo, para colocar cartões
+                    na
+                    coluna do processo da equipe, é necessário que os integrantes se perguntem: Onde estão agora? De
+                    onde
+                    vieram? Aonde vão?</p>
+                <p>A standup meeting é uma reunião diária em pé onde os desenvolvedores “caminham pelo quadro”. Nessa
+                    reunião é
+                    identificado itens faltantes no quadro que estão sendo trabalhados que posteriormente são
+                    adicionados ao
+                    quadro. O objetivo é avançar todos os itens para a coluna “feito”, priorizando os itens de alto
+                    valor de
+                    negócio para o cliente. Também é analisado o fluxo de processo e identificar possíveis obstáculos à
+                    finalização.</p>
+                <p>Na reunião de retrospectiva semanal são analisadas medidas de processo com o objetivo de achar
+                    possíveis
+                    melhorias do processo já propondo mudanças a serem implementadas.</p>
+            </div>
+
+            <h3 class="text-subtitle">Prós do Kanban</h3>
+
+            <ul>
+                <li>
+                    Orçamentos menores e requisitos temporais.
+                </li>
+                <li>
+                    Permite entrega de produto mais cedo.
+                </li>
+                <li>
+                    Políticas de processo são explicitadas.
+                </li>
+                <li>
+                    Melhoria contínua de processo.
+                </li>
+            </ul>
+
+            <h3 class="text-subtitle">Contras do Kanban</h3>
+
+            <ul>
+                <li>
+                    Sucesso definido pela colaboração da equipe.
+                </li>
+                <li>
+                    Má análise de negócio pode resultar em fracasso de projeto.
+                </li>
+                <li>
+                    Possibilidade de perda de foco devido a flexibilidade dos desenvolvedores.
+                </li>
+                <li>
+                    Relutância dos desenvolvedores em usar medições.
+                </li>
+            </ul>
+            <div class="p-container">
+                <p>Fontes:</p>
+                
+                <cite>
+                    PRESSMAN, Roger S., MAXIM, Bruce. Engenharia de Software: Uma abordagem profissional. 9° edição. AMGH
+                    Editora Ltda, 2021.
+                </cite>
+                <br>
+                <br>
+                <cite>
+                    Kanbanzine, O que é Kanban? Explicado para Iniciantes, Disponível em: <"https://kanbanize.com/pt/recursos-kanban/primeiros-passos/o-que-e-kanban">.
+                </cite>
+            </div>
+        </div>
+
+        
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

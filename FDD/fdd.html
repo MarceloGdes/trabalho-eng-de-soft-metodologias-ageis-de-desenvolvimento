@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../pages-style.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="text-container">
+
+            <h1>FDD (Feature Driven Development)</h1>
+            <div class="p-container">
+
+                <p> O FDD é uma função com valor para o próprio cliente, que pode ser desenvolvida em duas ou menos semanas, se
+                    preocupa em promover aplicabilidade.</p>
+                <p>O FDD trabalha seus projetos a partir de 5 processos.</p>
+            </div>
+    
+            <ul>
+                <li>
+                    Denvolvimento de modelo geral
+                </li>
+                <li>
+                    Planejamento por funcionalidade
+                </li>
+                <li>
+                    Construção por funcionalidade
+                </li>
+                <li>
+                    Modelagem por funcionalidade
+                </li>
+                <li>
+                    Criação de lista de funcionalidades
+                </li>
+            </ul>
+            <div class="p-container">
+                <p>Na metodologia FDD, as entregas são incrementais ao longo de todo o projeto, por isso é um método
+                    indicado para projetos longos que estão em fase inicial.
+                </p>
+            </div>
+            <h2 class="text-subtitle">Características do FDD</h2>
+    
+            <ul>
+                <li>
+                    É uma ferramenta interativa (baseada na repetição, em ciclos)
+                </li>
+                <li>
+                    Tem como base a criação de produtos de qualidade
+                </li>
+                <li>
+                    Funciona com pequenos e grandes projeto
+                </li>
+                <li>
+                    Foco no processo em si, e não no resultado final
+                </li>
+                <li>
+                    É uma ferramenta pautada na geração de muitas informações (enriquecimento do processo de criação)
+                </li>
+                <li>
+                    Funciona sob uma abordagem sistemática e simples
+                </li>
+                <li>
+                    Seu método operacional facilita a evolução do processo (apenas aquilo que funciona passa para a fase
+                    seguinte)
+                </li>
+            </ul>
+    
+            <h2 class="text-subtitle">Método Coad/Yourdon</h2>
+            <div class="p-container">
+                <p> O FDD surgiu a partir de uma metodologia de análise orientada a objetos chamada método Coad/Yourdon.
+                    Esse método foi criado pelos norte-americanos Peter Coad e Edward Yourdon, tem como objetivo identificar
+                    a razão dos problemas e os requisitos do sistema para sua solução.</p>
+                <p>Como início, o método Coad/Yourdon foi pensado apenas para a fase de análise. Logo em seguida, começou a
+                    ser aplicado também na fase de desenvolvimento do projeto</p>
+                <p> Para identificar os problemas no momento da análise, o processo toma como base 5 fases preliminares de
+                    análise que acontecem de forma simultâneas, sendo elas:</p>
+            </div>
+            <ol>
+                <li>
+                    <b>Identificação de classes</b>
+                </li>
+                <li>
+                    <b>Objetos</b>
+                </li>
+                <li>
+                    <b> Estruturas</b>
+                </li>
+                <li>
+                    <b>Assuntos</b>
+                </li>
+                <li>
+                    <b>Definição dos atributos e dos serviços</b>
+                </li>
+            </ol>
+    
+            <h2 class="text-subtitle">Os 5 processos do Feature Driven Development</h2>
+            <div class="p-container">
+                <p> A partir das cinco fases da metodologia Coad/Yourdon, definem-se os 5 processos do FDD: </p><br>
+                
+            </div>
+            <img src="fdd.png" class="img-fluid" style="width: 90%;">
+            <h2 class="text-subtitle">1 - Desenvolver em modelo geral</h2>
+            <div class="p-container">
+                <p>O primeiro momento é para conhecer o sistema, possibilitando sua análise, bem como a avaliação do
+                    contexto no qual ele se insere. A partir desse conhecimento, o profissional estuda os domínios do
+                    sistema e desenvolve um modelo geral com base nesses estudos.</p>
+                <p>Com essa base, são feitas pequenas equipes para criar uma modelagem superficial para cada área de domínio
+                    do sistema. Cada modelo criado é revisado por outros membros do projeto, que não fazem parte da equipe
+                    inicial, a fim de escolher o melhor modelo de domínio para cada área</p>
+                <p>Sendo assim, no fim do processo os modelos escolhidos são transformados em um só no modelo geral do
+                    domínio do sistema e o trabalho finalmente é inciado.</p>
+            </div>
+            <h2 class="text-subtitle">2 - Gerar uma lista de funcionalidades</h2>
+            <div class="p-container">
+                <p>Nesta fase cria-se uma lista de funcionalidade do sistema, identificando e descrevendo a área de domínio
+                    de cada uma delas. As funcionalidades são importantes para o processo, pois cada uma é uma pequena
+                    tarefa que precisa ser implementada ao projeto, com o objetivo principal de gerar valor ao cliente.</p>
+                <p>Os itens de funcionalidade não devem levar mais de duas semanas para serem concluídos, e são ordenados na
+                    lista por ordem de prioridade no desenvolvimento.</p>
+                <p>Exemplo: uma lista de funcionalidades pode conter os seguintes itens. “validar a senha do usuário”,
+                    “liberar o login” e “gerar relatório de vendas”.</p>
+                <p>Caso a equipe não consiga criar a lista de funcionalidades, o processo de desenvolvimento sofre atraso,
+                    pois a primeira etapa de criação de modelo geral precisa ser refeita, caso contrário, as fases em
+                    seguida do projeto sofrerão as consequências de mais atrasos e erros.
+                </p>
+            </div>
+            <h2 class="text-subtitle">3 - Planejar por funcionalidade</h2>
+    
+            <div class="p-container">
+                <p>Após a lista de funcionalidades, é hora de planejar o desenvolvimento de cada uma delas. Para cada
+                    funcionalidade, são designados programadores-chefe, responsáveis por algumas classes ou códigos</p>
+                <p>Diante disso, se formam as equipes de planejamento. Dentro desses times, cada integrante é encarregado de
+                    uma parte do projeto.</p>
+            </div>
+            <h2 class="text-subtitle">4 - Modelar por funionalidade</h2>
+            <div class="p-container">
+                <p> Como na primeira fase, nessa etapa cria-se uma modelagem com as funcionalidades a serem desenvolvidas.
+                </p>
+                <p>O que difere essa modelagem das outras é que o programador chefe a cria de acordo com uma funcionalidade
+                    específica e a divide em classes, atributos e métodos.</p>
+                <p> Quando finalizada, a funcionalidade passa por testagens da equipe desenvolvedora.</p>
+            </div>
+            <h2 class="text-subtitle">5 - Construir por funcionalidade</h2>
+            <div class="p-container">
+                <p>Após a modelagem passar por vários testes, o código começa a ser implementado no sistema. Sendo assim, as
+                    funcionalidades são incorporadas e já podem ser colocadas em prática. Finalizado o código, o mesmo é
+                    escrito e essa funcionalidade tem sua conclusão.
+                </p>
+                <p>Aspectos que fazem parte dessa fase:</p>
+            </div>
+            <ul>
+                <li>
+                    Implementação das regras de negócio das classes
+                </li>
+                <li>
+                    Inspeção do código
+                </li>
+                <li>
+                    Condução dos testes unitários
+                </li>
+                <li>
+                    Release (lançamento) da funcionalidade
+                </li>
+            </ul>
+    
+            <h2 class="text-subtitle">Como executar um projeto FDD?</h2>
+            <h3 class="text-subtitle">Equipe necessária</h3>
+            <div class="p-container">
+                <p> Por ser um processo repleto de tarefas executáveis, o capital humano envolvido em um projeto FDD é
+                    essencial. Equipe necessária para atender as demandas do FDD:</p>
+            </div>
+            <ol>
+                <li>
+                    <b>Gerente de projeto:</b> Responsável por aspectos administrativos do projeto, gestão de tarefas e de
+                    prazos, operação do centro de controle, contato com o cliente e o compartilhamento do status do projeto.
+                </li>
+                <li>
+                    <b>Arquiteto-chefe:</b> Responsável pela criação do sistema e gerenciamento dos demais arquitetos
+                </li>
+                <li>
+                    <b>Programador-chefe:</b> Coordena a equipe dos programadores
+                </li>
+                <li>
+                    <b>Gerente de desenvolvimento:</b> Lida com equipe de desenvolvedores, gerencia prazos de sprints e
+                    coordena entregas e relatórios junto ao arquiteto-chefe
+                </li>
+                <li>
+                    <b>Proprietário da classe:</b> Desenvolvedores que gerenciam conjuntos menores de desenvolvimento de
+                    recursos, com prazo rápido de execução (até 2 semanas)
+                </li>
+                <li>
+                    <b>Especialista em dominio:</b> Pessoas que entendam o contexto do projeto e contribuem para otimizá-lo.
+                    Podem ser usuários, clientes, patrocinadores etc
+                </li>
+                <li>
+                    <b>Funções de suporte:</b> Como testers, escritores técnicos, administradores de sistema, gestores de
+                    ferramentas etc.
+                </li>
+            </ol>
+    
+            <h3 class="text-subtitle">FDD em metodologia ágeis: relação</h3>
+            <div class="p-container">
+                <p>Apesar do FDD ser uma metodologia ágil focada no processo de desenvolvimento do software com seus
+                    princípios bem definidos, ela é bastante flexível. Por esse motivo o FDD consegue se adaptar a se
+                    integrar a outros métodos, um desses é o Scrum.</p>
+            </div>
+            <h3 class="text-subtitle">Diferença entre FDD e Scrum</h3>
+            <div class="p-container">
+                <p>O FDD tem como base um conjunto de ações executadas de acordo com condados pré-determinados. Seu objetivo
+                    é que as pequenas interações (ciclos de repetições) sejam concluídas em um curto período de tempo.</p>
+                <p> O Scrum é uma metodologia ágil que tem como objetivo principal, criar um proejto focado nas pessoas, que
+                    também se adapta de acordo com as mudanças.</p>
+            </div>
+            <div class="p-container">
+                <p>Fontes:</p>
+                
+                <cite>
+                    xpeducacao, Feature Driven Development: tudo sobre a metodologia, Disponível em: <"https://blog.xpeducacao.com.br/fdd-feature-driven-development/">.
+                </cite>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
